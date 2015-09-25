@@ -1,0 +1,14 @@
+{
+    "name": "base",
+    "description": "base role",
+    "json_class": "Chef::Role",
+
+    "default_attributes": {
+    },
+
+    "run_list": [
+        "recipe[dstat]",
+        "recipe[git]",
+        "recipe[mackerel]"
+    ]
+}
