@@ -1,0 +1,5 @@
+---
+- hosts: localhost
+  tasks:
+    - command: bundle exec knife solo cook web
+    - command: bundle exec knife solo cook batch
