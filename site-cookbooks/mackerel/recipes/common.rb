@@ -6,7 +6,9 @@
 #
 # All rights reserved - Do Not Redistribute
 #
-directory '/etc/mackerel-agent/conf.d
+#
+yum_package 'mackerel-agent'
 
-package 'mackerel-agent'
+directory '/etc/mackerel-agent/conf.d'
+
 cookbook_file '/etc/mackerel-agent/mackerel-agent.conf'
