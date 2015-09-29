@@ -1,5 +1,5 @@
 ---
 - hosts: localhost
   tasks:
-    - command: bundle exec knife solo cook web
-    - command: bundle exec knife solo cook batch
+    - command: bundle exec knife solo cook web --ssh-control-master no
+    - command: bundle exec knife solo cook batch --ssh-control-master no
