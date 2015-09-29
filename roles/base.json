@@ -7,8 +7,6 @@
     },
 
     "run_list": [
-        "recipe[dstat]",
-        "recipe[git]",
         "recipe[mackerel]"
     ]
 }
