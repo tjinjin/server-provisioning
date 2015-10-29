@@ -46,6 +46,8 @@ Vagrant.configure(2) do |config|
       google.disk_size = "10"
 
       google.preemptible = true
+      google.on_host_maintenance = "TERMINATE"
+
       google.auto_restart = false
 
       override.ssh.username = 'circleci'
