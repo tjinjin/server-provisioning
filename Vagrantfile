@@ -30,6 +30,7 @@ Vagrant.configure(2) do |config|
   config.vm.define :gcp do |gcp|
     gcp.vm.box = "gce"
     gcp.vm.box_url = "https://github.com/mitchellh/vagrant-google/raw/master/google.box"
+    gcp.vm.synced_folder ".", "/vagrant", disabled: true
 
     gcp.vm.provider :google do |google, override|
       google.google_project_id = ENV['GCP_PROJECT_ID']
