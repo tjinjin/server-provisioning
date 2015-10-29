@@ -7,6 +7,7 @@ dependencies:
     - ~/cache
   pre:
     - |
+      touch $GCP_KEY_LOCATION
       echo $GCP_PROJECT_ID >> $GCP_KEY_LOCATION
       VERSION=1.7.4
       mkdir ~/cache
