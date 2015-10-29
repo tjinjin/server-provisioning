@@ -52,7 +52,7 @@ Vagrant.configure(2) do |config|
       google.auto_restart = false
 
       override.ssh.username = 'circleci'
-      override.ssh.private_key_path = '~/.ssh/id_gcp_circle'
+      override.ssh.private_key_path = '~/.ssh/id_gcp-circle'
     end
   end
 end
