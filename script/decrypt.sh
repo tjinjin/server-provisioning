@@ -1,9 +1,10 @@
 #!/bin/bash
 
-PUBLIC_KEY="pub.pem"
+working=/home/ubuntu/server-provisioning
+PUBLIC_KEY="$working/pub.pem"
 SECRET_KEY=~/.ssh/id_gcp-circleci
-COMMON_KEY=".secret"
-FILE="gcp_key.json"
+COMMON_KEY="$working/.secret"
+FILE="$working/gcp_key.json"
 
 openssl rsautl -decrypt -inkey $SECRET_KEY -in $COMMON_KEY.encrypt -out $COMMON_KEY
 
