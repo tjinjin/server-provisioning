@@ -1,6 +1,6 @@
 #!/bin/bash
 
-. ./env.sh
+. ~/server-provisioning/env.sh
 
 openssl rsautl -decrypt -inkey $SECRET_KEY -in $COMMON_KEY.encrypt -out $COMMON_KEY
 
