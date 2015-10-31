@@ -22,7 +22,7 @@ dependencies:
 
       cd ~/$CIRCLE_PROJECT_REPONAME
       vagrant up --provider=google
-      vagrant ssh-config >> ~/.ssh/config
+      vagrant ssh-config gcp >> ~/.ssh/config
       ./script/decrypt.sh
 
 test:
