@@ -1,1 +1,3 @@
 cookbooks
+script/.secret
+script/gcp_key.json
