@@ -23,10 +23,11 @@ dependencies:
       cd ~/$CIRCLE_PROJECT_REPONAME
       vagrant up --provider=google
       vagrant ssh-config >> ~/.ssh/config
+      ./script/decrypt.sh
 
 test:
   pre:
-    - bundle exec knife solo cook web
+    - bundle exec knife solo bootstrap gcp
 
   post:
     - vagrant destroy -f
