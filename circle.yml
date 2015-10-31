@@ -20,11 +20,9 @@ dependencies:
         vagrant plugin install vagrant-google
       fi
 
-      pwd
-      ls -la
+      cd ~/$CIRCLE_PROJECT_REPONAME
       ./script/decrypt.sh
 
-      cd ~/$CIRCLE_PROJECT_REPONAME
       vagrant up --provider=google
       vagrant ssh-config gcp >> ~/.ssh/config
 
