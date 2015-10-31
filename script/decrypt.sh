@@ -1,6 +1,6 @@
 #!/bin/bash
 
-working=/home/ubuntu/server-provisioning
+working=/home/ubuntu/server-provisioning/script
 PUBLIC_KEY="$working/pub.pem"
 SECRET_KEY=~/.ssh/id_gcp-circleci
 COMMON_KEY="$working/.secret"
