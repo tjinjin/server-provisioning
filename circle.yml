@@ -20,8 +20,8 @@ dependencies:
         vagrant plugin install vagrant-google
       fi
 
-  post:
-    - |
+      pwd
+      ls -la
       ./script/decrypt.sh
 
       cd ~/$CIRCLE_PROJECT_REPONAME
