@@ -21,7 +21,9 @@ dependencies:
       fi
 
       cd ~/$CIRCLE_PROJECT_REPONAME
-      ./script/decrypt.sh
+      #./script/decrypt.sh
+
+      echo $GCP_KEY > $GCP_KEY_LOCATION
 
       vagrant up --provider=google
       vagrant ssh-config gcp >> ~/.ssh/config
